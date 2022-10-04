@@ -5,7 +5,9 @@ body {
 header {
     background-color: rgb(172, 148, 148);
     width: 1290px;
+    height: 30px;
     margin: auto;
+   line-height: 30px;
 }
 
 a {
