@@ -1,5 +1,6 @@
 body {
     background-color: rgb(67, 65, 65);
+    width: fit-content;
 }
 
 header {
@@ -15,10 +16,6 @@ a {
     text-decoration: none;
     padding: 10px;
 
-}
-
-.footer{
-    visibility: hidden;
 }
 
 .item-a {
@@ -105,7 +102,7 @@ a {
 
 .item-u {
     grid-area: img21;
-    padding-top: 48px;
+    padding-top: 24px;
     color: red;
 }
 
@@ -116,28 +113,14 @@ a {
     color: red;
 }
 
-.item-w {
-    grid-area: txt;
-    padding-top: 90px;
-    padding-left: 130px;
-    color: red;
-}
-
-.item-x {
-    grid-area: txt;
-    padding-top: 110px;
-    padding-left: 110px;
-    color: red;
-}
 
 .container {
     background-color: white;
     width: 1290px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(5, 250px);
-    grid-template-rows: 65px 76px 178px 380px 250px 150px 154px 150px;
+    grid-template-rows: auto;
     grid-template-areas:
         'img1 img1 img1 img1 img2'
         'img1 img1 img1 img1 img3'
@@ -151,164 +134,135 @@ a {
 }
 
 @media only screen and (max-width: 400px) {
-.item-a {
+    .item-a {
         grid-area: img1;
-        width: 25%;
-        height: 25%;
+        max-width: 100%;
     }
 
     .item-b {
         grid-area: img2;
-        width: 25%;
-        height: 25%;
+        max-width: 100%;
     }
 
     .item-c {
         grid-area: img3;
-        width: 25%;
-        height: 25%;
+        max-width: 100%;
     }
 
     .item-d {
         grid-area: img4;
-        width: 25%;
-        height: 25%;
+        max-width: 100%;
     }
 
     .item-e {
         grid-area: img5;
-        width: 25%;
-        height: 25%;
+        max-width: 100%;
     }
 
     .item-f {
         grid-area: img6;
-        width: 25%;
-        height: 25%;
+        max-width: 100%;
     }
 
     .item-g {
         grid-area: img7;
-        width: 25%;
-        height: 25%;
+        max-width: 100%;
     }
 
     .item-h {
         grid-area: img8;
-        width: 25%;
-        height: 25%;
+        max-width: 100%;
 
     }
 
     .item-i {
         grid-area: img9;
-        width: 25%;
-        height: 25%;
+        max-width: 100%;
     }
 
     .item-j {
         grid-area: img10;
-        width: 25%;
-        height: 25%;
+        max-width: 100%;
     }
 
     .item-k {
         grid-area: img11;
-        width: 25%;
-        height: 25%;
+        max-width: 100%;
     }
 
     .item-l {
         grid-area: img12;
-        width: 25%;
-        height: 25%;
+        max-width: 100%;
     }
 
     .item-m {
         grid-area: img13;
-        width: 25%;
-        height: 25%;
+        max-width: 100%;
     }
 
     .item-n {
         grid-area: img14;
-        width: 25%;
-        height: 25%;
+        max-width: 100%;
     }
 
     .item-o {
         grid-area: img15;
-        width: 25%;
-        height: 25%;
+        max-width: 100%;
 
     }
 
     .item-p {
         grid-area: img16;
-        width: 25%;
-        height: 25%;
+        max-width: 100%;
     }
 
     .item-q {
         grid-area: img17;
-        width: 25%;
-        height: 25%;
+        max-width: 100%;
     }
 
     .item-r {
         grid-area: img18;
-        width: 25%;
-        height: 25%;
+        max-width: 100%;
     }
 
     .item-s {
         grid-area: img19;
-        width: 25%;
-        height: 25%;
+        max-width: 100%;
     }
 
     .item-t {
         grid-area: img20;
-        width: 25%;
-        height: 25%;
+        max-width: 100%;
     }
 
     .item-u {
         grid-area: img21;
-        width: 50%;
-        height: 50%;
-        padding-top: 48px;
+        max-width: 100%;
+        padding-top: 24px;
         color: red;
     }
+
 
     .item-v {
         grid-area: txt;
-        padding-top: 70px;
-        padding-left: 110px;
-        color: red;
-        visibility: hidden;
+        padding-top: 0px;
+        padding-left: 0px;
+        background-color: rgb(233, 188, 129);
+        max-width: 100%;
+        color: black;
+        display: inline;
+        height: 30px;
+        line-height: 30px;
     }
 
-    .item-w {
-        grid-area: txt;
-        padding-top: 90px;
-        padding-left: 130px;
-        color: red;
-        visibility: hidden;
-    }
-    
-    .item-x {
-        grid-area: txt;
-        padding-top: 110px;
-        padding-left: 110px;
-        color: red;
-        visibility: hidden;
+    .size{
+        max-width: 100%;
     }
     
     .container {
-        margin-left: auto;
-        margin-right: auto;
         display: grid;
+        width: fit-content;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: auto;
         grid-template-areas: 
@@ -318,16 +272,15 @@ a {
         'img5 img5 img6 img7 img8'
         'img9 img10 img10 img11 img12'
         'img9 img13 img14 img14 img15'
-        'img21 img13 img16 img17 img18';
-        gap: 3px;
+        'img21 img13 img16 img17 img18'
+        'txt txt txt txt txt';
     }
 
     header {
         background-color: rgb(233, 188, 129);
-        width: 1fr;
+        width: 1290px;
         height: 30px;
         margin: auto;
-        line-height: 30px;
         }
     
     a {
@@ -335,17 +288,7 @@ a {
         text-decoration: none;
         padding: 10px;
     }
+    
 
-    footer{
-        width: 1fr;
-    }
-    .footer{
-        visibility: visible;
-        background-color: rgb(233, 188, 129);
-        width: 1fr;
-        height: 30px;
-        line-height: 30px;
-        position: fixed;
-        margin: auto;
-    }
+
 }
